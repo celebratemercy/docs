@@ -21,6 +21,10 @@
       "url": "mailto:hello@aalpha.ai"
     }
   ],
+  "topbarCtaButton": {
+    "name": "Edit",
+    "url": "https://dashboard.mintlify.com"
+  },
   "primaryTab": {
     "name": "Global Salawat Challenge"
   },
