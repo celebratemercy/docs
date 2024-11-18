@@ -92,6 +92,7 @@
     {
       "group": "Getting Started",
       "pages": [
+        "global-salawat-dashboard/navigation",
         "global-salawat-dashboard/analytics",
         "global-salawat-dashboard/pledges",
         "global-salawat-dashboard/organizations",
