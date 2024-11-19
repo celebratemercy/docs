@@ -1,52 +1,121 @@
 ---
 title: 'User Management'
-description: 'Managing users using Clerk'
+description: 'Step-by-step guide on for Managing Users on the Salawat Dashboard via Clerk'
 ---
 
-## Introduction
+# Standard Operating Procedure (SOP) for Managing Users on the Salawat Dashboard via Clerk
 
-Builder.io is a powerful tool for managing and updating your website content. This guide will walk you through the process of logging in, navigating to your pages, and making changes to your site.
+---
 
-## **Steps to Update Your Site**
+## Overview
+This SOP provides a comprehensive guide for managing user accounts, access, and authentication for the Salawat Dashboard using Clerk. Clerk is an enterprise-grade user management and authentication platform ensuring security and control over user access.
 
-### **1. Log In**
+---
 
-- Visit the Builder.io website and log in with your credentials.
+## Scope
+This SOP applies to administrators responsible for managing user access and authentication for the Salawat Dashboard.
 
-### **2. Access Your Pages**
+---
 
-- Once logged in, navigate to the **Content** section.
-- Use the left-hand menu to find the **Content Type** tab.
-- Here, you will see a list of your pages. Click on the page you want to edit (e.g., "home").
+## Responsibilities
+- **Administrators**: Maintain user access, ensure secure authentication, and configure user management settings.
+- **Developers**: Assist in troubleshooting advanced issues and updating configurations.
 
-### **3. Navigate to Sections**
+---
 
-- After selecting a page, you will see a list of sections on the left side (e.g., HeaderBuilder, HomeHeroSectionBuilder).
-- Click on the section you wish to update.
+## Requirements
+- Access to Clerk.
+- Credentials:
+  - GitHub login credentials associated with `developer@celebratemercy.com`.
+- Administrative privileges for user management on the Salawat Dashboard.
 
-### **4. Edit Section Options**
+---
 
-- With a section selected, go to the **Options** tab on the right.
-- Here, you can adjust various settings such as:
-- **Background color**
-- **Text color**
-- **Images (Logo src)**
-- **Links (Logo href, Seerah store href)**
+## Process
 
-### **5. Make Your Changes**
+### 1. Accessing Clerk
+1. Navigate to [Clerk](https://clerk.dev).
+2. Click **Sign In** on the homepage.
+3. Log in using GitHub credentials associated with `developer@celebratemercy.com`.
+4. Once logged in, verify that the dashboard displays user statistics and authentication details.
 
-- Adjust the colors, text, and images as needed.
-- Ensure all changes reflect your desired updates.
+---
 
-### **6. Publish Your Changes**
+### 2. Overview of Clerk Dashboard
+1. The homepage provides:
+   - User statistics (e.g., active users, sign-ups, sign-ins).
+   - Authentication system status.
+   - Recent sign-ins and sign-ups.
 
-- Once you have made your adjustments, click the **Publish** button at the top right to make your changes live.
-- Changes will be reflected after 10 seconds
+---
 
-## **Tips**
+### 3. Managing Users
+#### **View Existing Users**
+1. Navigate to the **Users** tab.
+2. Review the list of users with access to the dashboard.
 
-- **Preview Changes**: Use the preview option to see how your changes will look before publishing.
-- **Version Control**: Keep track of different versions of your page to easily revert if needed.
-- **Feedback**: Use the feedback option to report any issues or get help.
+#### **Remove or Ban Users**
+1. To remove a user, delete their account from the list.
+2. For advanced security, upgrade to enable banning users by IP, email, or device.
 
-By following these steps, you can efficiently manage and update your website using Builder.io.
+#### **Inviting New Users**
+1. Click the **Invitations** tab.
+2. Send an invitation to new users to explicitly grant access.
+3. Ensure only invited users can log in by keeping the system in **Restricted** mode.
+
+---
+
+### 4. Configuring Authentication Settings
+1. Navigate to the **Configure** tab.
+2. Set authentication preferences:
+   - Choose login methods (e.g., email, username, or password).
+   - Enable features like passwordless login using email verification codes.
+   - Configure settings for forgotten passwords.
+
+#### **Restrict Access**
+1. Go to the **Restrictions** tab.
+2. Ensure the system is set to **Restricted**:
+   - Only invited users can access the dashboard.
+   - Prevent unauthorized users from creating accounts.
+
+---
+
+### 5. Customizing User Experience
+1. Navigate to the **Customization** section.
+2. Configure:
+   - **Login Displays**:
+     - Adjust how users are presented on the platform after login.
+   - **Email Notifications**:
+     - Edit email content and design for account-related notifications.
+   - **SMS Notifications**:
+     - Customize text and content of SMS notifications.
+
+---
+
+### 6. Advanced Settings
+1. Explore advanced features:
+   - Monitor authentication system health and performance.
+   - Adjust domain settings (already configured by default).
+   - Utilize additional Clerk features for user management as needed.
+
+---
+
+### 7. Inviting New Organizations or Users
+1. For new users or organizations requiring access:
+   - Send them invitations via the **Invitations** tab.
+   - Only invited users will be able to log in and access the platform.
+
+---
+
+### 8. Finalizing and Verifying Changes
+1. Ensure all user-related settings are up to date.
+2. Regularly review the user list and remove unauthorized users.
+3. Test any changes to user authentication and notifications to confirm functionality.
+
+---
+
+## References
+- [Clerk Official Website](https://clerk.dev)
+- Salawat Dashboard User Management Documentation
+
+

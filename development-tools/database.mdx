@@ -1,52 +1,117 @@
 ---
 title: 'Database'
-description: 'Managing Supabase databases'
+description: 'Step-by-step guide for Accessing and Managing Data on Supabase for Salawat’s Site and Manifest Mercy'
 ---
 
-## Introduction
+# Standard Operating Procedure (SOP) for Accessing and Managing Data on Supabase for Salawat’s Site and Manifest Mercy
 
-Builder.io is a powerful tool for managing and updating your website content. This guide will walk you through the process of logging in, navigating to your pages, and making changes to your site.
+---
 
-## **Steps to Update Your Site**
+## Overview
+This SOP outlines the steps for accessing, managing, and exporting data associated with Salawat’s Site and Manifest Mercy using Supabase, a free and secure database platform.
 
-### **1. Log In**
+---
 
-- Visit the Builder.io website and log in with your credentials.
+## Scope
+This SOP applies to administrators and developers responsible for managing data for Salawat’s Site and Manifest Mercy through Supabase.
 
-### **2. Access Your Pages**
+---
 
-- Once logged in, navigate to the **Content** section.
-- Use the left-hand menu to find the **Content Type** tab.
-- Here, you will see a list of your pages. Click on the page you want to edit (e.g., "home").
+## Responsibilities
+- **Administrators**: Access and review database information as needed.
+- **Developers**: Ensure data integrity and manage export processes.
+- **Support Staff**: Provide guidance on data usage and analysis.
 
-### **3. Navigate to Sections**
+---
 
-- After selecting a page, you will see a list of sections on the left side (e.g., HeaderBuilder, HomeHeroSectionBuilder).
-- Click on the section you wish to update.
+## Requirements
+- Access to Supabase.
+- GitHub credentials for `developer@celebratemercy.com`.
+- Basic knowledge of table structures and data management.
 
-### **4. Edit Section Options**
+---
 
-- With a section selected, go to the **Options** tab on the right.
-- Here, you can adjust various settings such as:
-- **Background color**
-- **Text color**
-- **Images (Logo src)**
-- **Links (Logo href, Seerah store href)**
+## Process
 
-### **5. Make Your Changes**
+### 1. Accessing Supabase
+1. Navigate to [Supabase](https://supabase.com).
+2. Click **Sign In** on the homepage.
+3. Choose **Continue with GitHub**.
+4. Log in using the GitHub credentials for the Salawat development account (`developer@celebratemercy.com`).
+5. Once logged in, verify that you are on the homepage for Celebrate Mercy’s Supabase database.
 
-- Adjust the colors, text, and images as needed.
-- Ensure all changes reflect your desired updates.
+---
 
-### **6. Publish Your Changes**
+### 2. Navigating the Supabase Interface
+1. On the homepage, you will see two databases:
+   - **Manifest Mercy**
+   - **Salawat Site**
+2. Click on the **Salawat Site** database to view data related to Salawat’s Site.
 
-- Once you have made your adjustments, click the **Publish** button at the top right to make your changes live.
-- Changes will be reflected after 10 seconds
+---
 
-## **Tips**
+### 3. Using the Table Editor
+1. Select the **Table Editor** tab to access and manage tables.
+2. View the available tables, such as:
+   - **Campaigns Table**: Contains data on all campaigns for Salawat’s Site.
+   - **Organizations Table**: Contains data on organizations linked to the site.
+   - **Pledges Table**: Includes all pledges made through the site.
+   - **Settings Table**: Displays site configuration details.
 
-- **Preview Changes**: Use the preview option to see how your changes will look before publishing.
-- **Version Control**: Keep track of different versions of your page to easily revert if needed.
-- **Feedback**: Use the feedback option to report any issues or get help.
+---
 
-By following these steps, you can efficiently manage and update your website using Builder.io.
+### 4. Viewing and Editing Data
+1. Select a table to view its contents, organized like a spreadsheet.
+2. For minor updates:
+   - Click on a cell to edit directly (e.g., update an organization’s logo by entering a new S3 bucket link).
+3. Avoid making significant changes directly in the database unless necessary.
+4. Use the Salawat Dashboard for most data updates to ensure consistency.
+
+---
+
+### 5. Understanding Table Relationships
+1. **Campaigns Table**:
+   - Contains campaign-specific data.
+   - Links to other tables via the **campaign ID** column.
+2. Example:
+   - Data with campaign ID `1` in the **Pledges Table** corresponds to the campaign with ID `1` in the **Campaigns Table**.
+3. Other tables reference this structure for organized data linkage.
+
+---
+
+### 6. Exporting Data
+1. To export data:
+   - Click the **Export** button in the top-left corner of the Supabase interface.
+   - Choose the desired format (e.g., CSV, JSON) and save the exported file.
+2. Use exported data for analysis, backup, or sharing as required.
+
+---
+
+### 7. Best Practices
+#### **Avoid Direct Changes**
+- Make changes through the Salawat Dashboard wherever possible to maintain data consistency.
+- Direct database edits should only be performed for emergency fixes or advanced configurations.
+
+#### **Backup Before Changes**
+- Always export a backup of data before making significant modifications.
+
+#### **Maintain Data Security**
+- Restrict access to Supabase and ensure only authorized personnel can log in.
+
+---
+
+### 8. Key Features Summary
+- **Salawat Site database**:
+  - Campaigns, organizations, pledges, and settings data.
+- **Manifest Mercy database**:
+  - Separate dataset for additional projects.
+- Data export capabilities for analysis or transfer.
+
+---
+
+## References
+- [Supabase Official Website](https://supabase.com)
+- Salawat Dashboard User Guide
+- Database Management Documentation
+
+

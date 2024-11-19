@@ -1,0 +1,59 @@
+---
+title: Mintlify
+description: 'Step-by-step guide for Adding and Updating Documentation on the Documentation Platform'
+---
+
+# Standard Operating Procedure (SOP) for Adding and Updating Documentation on the Documentation Platform
+
+## Overview
+This SOP provides detailed instructions for adding and updating documentation on the documentation platform, powered by Mintify, accessed via [docs.celebratemercy.com](https://docs.celebratemercy.com).
+
+## Scope
+This SOP is applicable to administrators and team members responsible for maintaining and updating the documentation platform for internal and external audiences.
+
+## Responsibilities
+- **Documentation Administrators**: Ensure documentation is accurate, up-to-date, and aligned with organizational standards.
+- **Developers**: Maintain the structure and organization of the documentation files and folders.
+- **Analysts**: Monitor platform analytics for performance insights.
+
+## Requirements
+- Credentials to log in to the Mintify dashboard: `developer@celebratemercy.com`.
+- Access to [docs.celebratemercy.com](https://docs.celebratemercy.com).
+- Basic understanding of JSON file structures.
+
+## Process
+
+### 1. Accessing the Documentation Platform
+1. Navigate to [docs.celebratemercy.com](https://docs.celebratemercy.com).
+2. Click the **Edit** button in the top-right corner of the page.
+3. If prompted, log in using the `developer@celebratemercy.com` credentials.
+
+### 2. Navigating the Mintify Dashboard
+1. Once logged in, view the Mintify dashboard:
+   - Review documentation resources, including last update timestamps and editor details.
+2. Access platform analytics via **View Analytics** to check:
+   - Visitor counts.
+   - Page view statistics.
+
+### 3. Editing Existing Documentation
+1. Click **Editor** in the Mintify dashboard.
+2. Use the left-side panel to locate folders and files:
+   - **Folders**: Organize documentation by category (e.g., Development Tools, Global Salawat Challenge).
+   - **Files**: Represent individual guides or pages.
+3. Select a file from the folder and make necessary edits directly on the right-hand panel.
+4. Once edits are complete:
+   - Click **Publish** to apply changes.
+   - Verify updates on the live website.
+
+### 4. Adding New Documentation to Existing Sections
+1. Add a new document:
+   - Navigate to the desired folder (e.g., Development Tools).
+   - Create a new file within the folder for the new guide or document.
+2. Update the `mint.json` file:
+   - Locate the JSON configuration for the folder.
+   - Add a new line in the format: `folder_name/filename`.
+
+```json
+"development-tools/new-document"
+
+

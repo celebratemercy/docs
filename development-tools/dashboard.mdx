@@ -1,0 +1,150 @@
+?
+---
+title: 'Admin Dashboard'
+description: 'Step-by-step guide for Managing the Admin Dashboard Backend System for Salawat Site'
+---
+
+# Standard Operating Procedure (SOP) for Managing the Admin Dashboard Backend System for Salawat Site
+
+---
+
+## Overview
+This SOP outlines how to effectively use the admin backend system for the Salawat Site. The dashboard, accessible at [admin.celebratemercy.com](https://admin.celebratemercy.com), facilitates data management, campaign settings, branding updates, and analytics monitoring.
+
+---
+
+## Scope
+This SOP is intended for administrators and team members managing pledges, donations, campaigns, organizations, branding, and settings for the Salawat Site.
+
+---
+
+## Responsibilities
+- **Administrators**: Oversee dashboard management, update campaigns, and ensure data accuracy.
+- **Team Members**: Make necessary updates to pledges, donations, and branding configurations.
+
+---
+
+## Requirements
+- Access to Admin Dashboard.
+- Credentials provided in the login database.
+- Understanding of platform features (e.g., Clerk for user authentication).
+
+---
+
+## Process
+
+### 1. Accessing the Admin Dashboard
+1. Navigate to [admin.celebratemercy.com](https://admin.celebratemercy.com).
+2. Log in using credentials stored in the login database.
+
+---
+
+### 2. Key Dashboard Features
+
+#### **2.1 Analytics Overview**
+1. View analytics including:
+   - Total pledges.
+   - Unique emails.
+   - Countries.
+   - Organizations.
+   - Total donations.
+2. Use the **Daily Charts** tab to analyze trends:
+   - Filter by date range for pledges or donations.
+
+#### **2.2 Recent Data**
+1. Access:
+   - Recently added countries.
+   - Recent pledges.
+2. Edit or update these entries directly.
+
+---
+
+### 3. Managing Pledges
+1. Navigate to the **Pledges** tab.
+2. Use filters to sort data:
+   - Filter by email, country, source, or date.
+   - Adjust the number of rows displayed.
+3. Perform actions:
+   - Edit pledge details.
+   - Delete a pledge if necessary.
+4. Export data as a CSV:
+   - Apply filters for specific data or export all pledges.
+5. To add a new pledge:
+   - Click **New Pledge**.
+   - Fill in details (e.g., Name, Amount Pledged, Email, Country, Source, Date).
+   - Submit to save.
+
+---
+
+### 4. Managing Organizations
+1. Access the **Organizations** tab.
+2. View and manage existing organizations:
+   - Name, logo (stored in the database), URL, and source.
+   - Copy and share organization referral links.
+3. Add a new organization:
+   - Input the name, referral link, and photo URL.
+   - Ensure file design is correct for logos.
+
+---
+
+### 5. Managing Donations
+1. Navigate to the **Donations** tab.
+2. View donation details:
+   - Name, email, amount, currency, date, and associated fees.
+3. Export donation data:
+   - Use the **Export to CSV** option to download all data.
+   - No need to access Stripe for this information.
+
+---
+
+### 6. Configuring Settings
+
+#### **6.1 General Settings**
+1. Adjust system limits:
+   - Pledges per email or IP per day.
+   - Silhouettes per email.
+2. Update sponsor names:
+   - Change names displayed on the front end.
+
+#### **6.2 Campaign Settings**
+1. Create a new campaign:
+   - Input campaign name, start, and end dates.
+   - Set the campaign as active to zero out old data and start fresh.
+2. Deleting a campaign:
+   - Type "delete" to confirm deletion.
+
+#### **6.3 Branding Settings**
+1. Update branding components:
+   - Adjust color schemes using RGB or hex codes.
+   - Update typography (e.g., heading and body fonts).
+2. Preview changes and save to apply updates to the website in real-time.
+
+#### **6.4 Pledge Settings**
+1. Add or deactivate pledge options directly from the system.
+2. Real-time updates are applied to the form.
+
+#### **6.5 Donation Settings**
+1. Configure custom donation amounts without accessing Stripe.
+2. Enable multi-donation functionality.
+
+#### **6.6 Country Settings**
+1. Update country names for accurate display:
+   - Correct duplicate or incorrect names caused by IP geolocation.
+   - Changes reflect on the front end automatically.
+
+---
+
+### 7. Best Practices
+- Regularly review analytics and reports to monitor system health.
+- Keep campaign data organized by setting appropriate start and end dates.
+- Maintain branding consistency by updating colors and typography for new campaigns.
+- Use CSV exports for data backups and analysis.
+
+---
+
+## References
+- [Admin Dashboard](https://admin.celebratemercy.com)
+- Builder.io Documentation
+- Clerk User Management Platform
+
+

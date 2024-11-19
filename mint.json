@@ -110,7 +110,13 @@
         "development-tools/deployment",
         "development-tools/design",
         "development-tools/builder",
-        "development-tools/user-management"
+        "development-tools/user-management",
+        "development-tools/dashboard",
+        "development-tools/database-indepth",
+        "development-tools/documentation",
+        "development-tools/global-salawat",
+        "development-tools/mintlify",
+        "development-tools/pledge-processing"
       ]
     }
   ]
